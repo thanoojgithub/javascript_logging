@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blackbird js Logger</title>
+
+<script type="text/javascript" src="../js/blackbird.js"></script>
+<link type="text/css" rel="Stylesheet" href="../css/blackbird.css" />
+<script>
+  
+  
+
+function blackbirdLog() {
+log.profile( 'logging' );
+log.debug("hello");
+log.debug( 'this is a debug message' );
+log.info( 'this is an info message' );         
+log.warn( 'this is a warning message' );         
+log.error( 'this is an error message' );         
+
+
+
+
+
+
+arrayMe = {};       
+arrayMe["c"]="console";         
+arrayMe["m"]="me";
+log.debug(JSON.stringify(arrayMe));
+log.debug(arrayMe.c);
+log.debug(arrayMe.m);
+
+
+log.profile('logging');
+}
+
+</script>
+</head>
+<body>
+<input type="button" value="click me" onclick="blackbirdLog();"/>
+</body>
+</html>

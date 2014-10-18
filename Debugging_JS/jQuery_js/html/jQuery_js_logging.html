@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery custom log function</title>
+<script src="../js/jquery-2.1.1.min.js"></script>
+
+<script>
+$(function(){
+  var log = function (msg,val) {
+      console.log(msg+" : "+val);
+      return this;
+  };
+var flag = true;
+var msg = "console me";
+log(msg,flag);
+
+var arrayMe = {};
+arrayMe["c"]="console";
+arrayMe["m"]="me";
+
+log(msg,JSON.stringify(arrayMe));
+log(msg,arrayMe.c);
+log("console",arrayMe.m)
+
+log($("#cm").attr("id"),$("#cm").text());
+
+  });
+</script>
+</head>
+<body>
+<div id="cm">javascript console.log</div>
+</body>
+</html>

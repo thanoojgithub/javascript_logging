@@ -8,7 +8,7 @@ javascript_logging - custom log function using jQuery and blackbird.js logging
   - use F12 to get developer Tool in your favorite browser.
   - custom log function expects - msg,val
     - msg : message string
-  - val : variable reference/value
+    - val : variable reference/value
 
 
 2. blackbird.js javascript library for logging

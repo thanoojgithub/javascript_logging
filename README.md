@@ -15,4 +15,4 @@ javascript_logging - custom log function using jQuery and blackbird.js logging
 	- read readme.md inside project.
 	- use F2 for toggle blackbird logging console. 
 	
-Note : find the screenshots for the both cases.
+Note :: find the screenshots for the both cases.
